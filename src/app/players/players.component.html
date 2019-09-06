@@ -1,0 +1,7 @@
+<a [routerLink]="['/']">Back</a>
+
+<h2>PLAYERS</h2>
+
+<div *ngFor="let player of players$ | async">
+  <h4>{{ player.name }}</h4>
+</div>
