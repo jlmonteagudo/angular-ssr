@@ -1,0 +1,51 @@
+[debug] [2019-09-06T14:28:32.947Z] ----------------------------------------------------------------------
+[debug] [2019-09-06T14:28:32.949Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\jlm.TORRECID\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-09-06T14:28:32.950Z] CLI Version:   7.3.1
+[debug] [2019-09-06T14:28:32.950Z] Platform:      win32
+[debug] [2019-09-06T14:28:32.950Z] Node Version:  v12.6.0
+[debug] [2019-09-06T14:28:32.951Z] Time:          Fri Sep 06 2019 16:28:32 GMT+0200 (GMT+02:00)
+[debug] [2019-09-06T14:28:32.951Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-06T14:28:32.962Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-06T14:28:32.963Z] > authorizing via signed-in user
+[debug] [2019-09-06T14:28:32.963Z] [iam] checking project angular-ssr-c5f34 for permissions ["firebase.projects.get"]
+[debug] [2019-09-06T14:28:32.965Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/angular-ssr-c5f34:testIamPermissions  
+
+[debug] [2019-09-06T14:28:33.851Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-06T14:28:33.853Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/angular-ssr-c5f34  
+ 
+[debug] [2019-09-06T14:28:34.037Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Develop\js\projects\pruebas\ssr'...
+[info] 
+[debug] [2019-09-06T14:28:34.043Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/angular-ssr-c5f34/webApps/-/config  
+ 
+[warn] !  Your requested "node" version "8" doesn't match your global version "12"
+[info] +  functions: Emulator started at http://localhost:5001
+[debug] [2019-09-06T14:28:34.454Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "C:\Develop\js\projects\pruebas\ssr\functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: dist/browser
+[info] +  hosting: Local server: http://localhost:5000
+[debug] [2019-09-06T14:28:35.104Z] [runtime-status] Functions runtime initialized. {"cwd":"C:\\Develop\\js\\projects\\pruebas\\ssr\\functions","node_version":"12.6.0"}
+[debug] [2019-09-06T14:28:35.105Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-06T14:28:35.110Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"C:\\Develop\\js\\projects\\pruebas\\ssr\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2019-09-06T14:28:35.113Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Develop\\js\\projects\\pruebas\\ssr\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2019-09-06T14:28:35.114Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"C:\\Develop\\js\\projects\\pruebas\\ssr\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[warn] !  Error: Cannot find module 'require("./server/main")'
+Require stack:
+- C:\Develop\js\projects\pruebas\ssr\functions\dist\server.js
+- C:\Develop\js\projects\pruebas\ssr\functions\lib\index.js
+- C:\Users\jlm.TORRECID\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulatorRuntime.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:625:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:527:27)
+    at Module.require (internal/modules/cjs/loader.js:683:19)
+    at require (internal/modules/cjs/helpers.js:16:16)
+    at webpackUniversalModuleDefinition (C:\Develop\js\projects\pruebas\ssr\functions\dist\server.js:3:28)
+    at Object.<anonymous> (C:\Develop\js\projects\pruebas\ssr\functions\dist\server.js:10:3)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:643:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:556:12)
+[warn] !  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.

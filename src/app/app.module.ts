@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule
